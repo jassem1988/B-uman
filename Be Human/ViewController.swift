@@ -12,7 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+//        let x = self.view.frame.width / 2
+//        let y = self.view.frame.height / 2
+//        
+//        let square = UIView(frame: CGRect(x: x - 50, y: y - 50, width: 100, height: 100))
+//        
+//        square.backgroundColor = UIColor.purple
+//        
+//        self.view.addSubview(square)
+        
+        
     }
 
 
