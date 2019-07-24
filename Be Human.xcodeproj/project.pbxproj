@@ -13,6 +13,8 @@
 		10D66A0722E84B4B005CA47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D669FF22E84B4B005CA47E /* Assets.xcassets */; };
 		10D66A0822E84B4B005CA47E /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D66A0122E84B4B005CA47E /* QuestionsViewController.swift */; };
 		10D66A0922E84B4B005CA47E /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D66A0222E84B4B005CA47E /* GenderViewController.swift */; };
+		10D66A0B22E85FC5005CA47E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D66A0A22E85FC5005CA47E /* Question.swift */; };
+		10D66A0D22E860B3005CA47E /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D66A0C22E860B3005CA47E /* QuestionBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		10D669FF22E84B4B005CA47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10D66A0122E84B4B005CA47E /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		10D66A0222E84B4B005CA47E /* GenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		10D66A0A22E85FC5005CA47E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		10D66A0C22E860B3005CA47E /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		10F6FF9322E43AAE00ED74C4 /* Be Human.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Be Human.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -62,6 +66,8 @@
 		10D669F722E84B4B005CA47E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				10D66A0A22E85FC5005CA47E /* Question.swift */,
+				10D66A0C22E860B3005CA47E /* QuestionBank.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,7 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D66A0622E84B4B005CA47E /* AppDelegate.swift in Sources */,
+				10D66A0B22E85FC5005CA47E /* Question.swift in Sources */,
 				10D66A0822E84B4B005CA47E /* QuestionsViewController.swift in Sources */,
+				10D66A0D22E860B3005CA47E /* QuestionBank.swift in Sources */,
 				10D66A0922E84B4B005CA47E /* GenderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

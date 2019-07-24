@@ -162,7 +162,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASC-nj-XC9" userLabel="Buttons Container">
                                         <rect key="frame" x="20" y="74.666666666666742" width="335" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yta-fv-iX4">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yta-fv-iX4">
                                                 <rect key="frame" x="195" y="0.0" width="140" height="50"/>
                                                 <color key="backgroundColor" red="1" green="0.54117647059999996" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -173,8 +173,11 @@
                                                 <state key="normal" title="False">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="40s-o9-LIK" eventType="touchUpInside" id="GOV-WX-Vg6"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5H-p7-W6j">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5H-p7-W6j">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="50"/>
                                                 <color key="backgroundColor" red="1" green="0.54117647058823526" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -185,6 +188,9 @@
                                                 <state key="normal" title="True">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="40s-o9-LIK" eventType="touchUpInside" id="b5r-JT-6tO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -210,7 +216,7 @@
                                                     <constraint firstAttribute="height" constant="20" id="L7g-UW-QUG"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGI-Lh-d9w">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGI-Lh-d9w" userLabel="Score Label">
                                                 <rect key="frame" x="297" y="27" width="38" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="38" id="Iie-Vb-SGY"/>
@@ -280,7 +286,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJw-kh-Esf" userLabel="Question Container">
                                 <rect key="frame" x="50.666666666666657" y="233.66666666666663" width="274" height="345"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrH-Ed-WII">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrH-Ed-WII" userLabel="Question Label">
                                         <rect key="frame" x="14.333333333333343" y="16" width="245.00000000000003" height="313"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -325,6 +331,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1N0-Nd-g7k"/>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="6tS-HR-pCt" id="rFK-v7-F88"/>
+                        <outlet property="questionLabel" destination="VrH-Ed-WII" id="Zsb-BD-HC9"/>
+                        <outlet property="scoreLabel" destination="wGI-Lh-d9w" id="qfl-aR-nof"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNP-eo-gKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
