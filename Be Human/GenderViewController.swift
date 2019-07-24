@@ -26,6 +26,7 @@ class GenderViewController: UIViewController {
         performSegue(withIdentifier: "genderChoice", sender: sender)
         navigationController?.navigationBar.barTintColor = UIColor.red
         
+        
     }
     
 
