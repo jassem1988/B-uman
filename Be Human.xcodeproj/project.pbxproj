@@ -40,7 +40,7 @@
 		10D669F422E84B4B005CA47E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				10D669F522E84B4B005CA47E /* Home */,
+				10D669F522E84B4B005CA47E /* Views */,
 				10D669F722E84B4B005CA47E /* Models */,
 				10D669F822E84B4B005CA47E /* Network Manager */,
 				10D669F922E84B4B005CA47E /* Supporting Files */,
@@ -51,12 +51,12 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		10D669F522E84B4B005CA47E /* Home */ = {
+		10D669F522E84B4B005CA47E /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				10D669F622E84B4B005CA47E /* Main.storyboard */,
 			);
-			path = Home;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		10D669F722E84B4B005CA47E /* Models */ = {
