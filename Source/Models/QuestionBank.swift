@@ -12,25 +12,25 @@ struct QuestionBank  {
     var questionList = [Question]()
     
     init() {
-        questionList.append(Question(questionText: "LGBTQ+ people are very rare", answer: false))
+        questionList.append(Question(questionText: "In mythology, Mercury fathered Hermaphroditus, who had both male and female sex organs.", answer: true))
         
-        questionList.append(Question(questionText: "LGBTQ+ people do not choose to be gay, but are actually born that way", answer: true))
+        questionList.append(Question(questionText: "The word drag is apparently an acronym, a stage direction coined by Shakespeare and his contemporaries meaning ‘Dressed Resembling A Girl’.", answer: true))
         
-        questionList.append(Question(questionText: "People turn out gay as a result of childhood trauma or because of a lack of good parental role models", answer: false))
+        questionList.append(Question(questionText: "Carmilla, a story of a lesbian vampire that preyed on young women, was written 25 years after Dracula.", answer: false))
         
-        questionList.append(Question(questionText: "Coming out for LGBTQ+ people is ongoing and lifelong", answer: true))
+        questionList.append(Question(questionText: "An american billionaire offered $65 million to the man that was able to woo and marry his lesbian daughter.", answer: false))
         
-        questionList.append(Question(questionText: "LGBTQ+ people are worse parents and more likely to cause harm to a child or children", answer: false))
+        questionList.append(Question(questionText: "The first openly gay doll, Gay Barbie, was launched in 1977. She had a pierced ear and her box was shaped like a closet.", answer: false))
         
-        questionList.append(Question(questionText: "Gay men are always feminine and lesbians are always masculine or 'butch' ", answer: false))
+        questionList.append(Question(questionText: "The world’s oldest porn, which dates back over 3,000 years, features both male/male, female/female and male/female couples.", answer: true))
         
-        questionList.append(Question(questionText: "Pedophiles are not more likely to be gay men", answer: true))
+        questionList.append(Question(questionText: "Uganda had a gay king. King Mwanga II, who reigned from 1884 to 1888, is widely reported to have had affairs with his male servants.", answer: true))
         
-        questionList.append(Question(questionText: "You can “spot” lesbian, gay man, or trans-identified person based off of specific mannerisms, clothing choices or physical characteristics", answer: false))
+        questionList.append(Question(questionText: "In the 1960s, the term AC/DC became a popular slang for bisexual. It came from the abbreviations for two types of electrical currents.", answer: true))
         
-        questionList.append(Question(questionText: "A bisexual person is not someone who can't make up their mind about whether or not they are straight or gay", answer: true))
+        questionList.append(Question(questionText: "Bruce Banner’s name was changed to David Banner in 1970s show The Incredible Hulk, as ‘Bruce’ was considered a stereotypically gay name.", answer: true))
         
-        questionList.append(Question(questionText: "Bisexual people like both genders equal amounts", answer: false))
+        questionList.append(Question(questionText: "The first gay kiss to be screened in Saudi Arabia was seen in 2018.", answer: false))
 
     }
 }

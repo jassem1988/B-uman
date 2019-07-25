@@ -15,9 +15,6 @@ class GenderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
-        
     }
     
     //MARK: - Buttons Actions

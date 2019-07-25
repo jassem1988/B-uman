@@ -21,14 +21,15 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var progressContainer: UIView!
     
     //Variables: -
-    let allQuestions = QuestionBank()
-    var pickedAnswer: Bool = false
-    var questionNumber: Int = 0
-    var score: Int = 0
+    private let allQuestions = QuestionBank()
+    private var pickedAnswer: Bool = false
+    private var questionNumber: Int = 0
+    private var score: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        questionLabel.sizeToFit()
         nextQuestion()
         
     }
