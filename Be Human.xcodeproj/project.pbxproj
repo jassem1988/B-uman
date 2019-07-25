@@ -15,9 +15,11 @@
 		10D66A0922E84B4B005CA47E /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D66A0222E84B4B005CA47E /* GenderViewController.swift */; };
 		10D66A0B22E85FC5005CA47E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D66A0A22E85FC5005CA47E /* Question.swift */; };
 		10D66A0D22E860B3005CA47E /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D66A0C22E860B3005CA47E /* QuestionBank.swift */; };
+		594B8908BBFD3ADFDD4E0D46 /* Pods_Be_Human.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E2D6277994AC6733094A29 /* Pods_Be_Human.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02E2D6277994AC6733094A29 /* Pods_Be_Human.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Be_Human.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D669F622E84B4B005CA47E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		10D669FA22E84B4B005CA47E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10D669FB22E84B4B005CA47E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		10D66A0A22E85FC5005CA47E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		10D66A0C22E860B3005CA47E /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		10F6FF9322E43AAE00ED74C4 /* Be Human.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Be Human.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EEC7B02BA52C9FED8D3B43F /* Pods-Be Human.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be Human.debug.xcconfig"; path = "Target Support Files/Pods-Be Human/Pods-Be Human.debug.xcconfig"; sourceTree = "<group>"; };
+		B9A45E0558BF6AF8E89ED304 /* Pods-Be Human.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be Human.release.xcconfig"; path = "Target Support Files/Pods-Be Human/Pods-Be Human.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				594B8908BBFD3ADFDD4E0D46 /* Pods_Be_Human.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +123,8 @@
 			children = (
 				10D669F422E84B4B005CA47E /* Source */,
 				10F6FF9422E43AAE00ED74C4 /* Products */,
+				A25609F290F7D2C36C1CA594 /* Pods */,
+				717C77E927338CF09456EC4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +136,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		717C77E927338CF09456EC4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02E2D6277994AC6733094A29 /* Pods_Be_Human.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A25609F290F7D2C36C1CA594 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EEC7B02BA52C9FED8D3B43F /* Pods-Be Human.debug.xcconfig */,
+				B9A45E0558BF6AF8E89ED304 /* Pods-Be Human.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10F6FFA522E43AB100ED74C4 /* Build configuration list for PBXNativeTarget "Be Human" */;
 			buildPhases = (
+				9282DAE3444B8B7601DF5BCF /* [CP] Check Pods Manifest.lock */,
 				10F6FF8F22E43AAE00ED74C4 /* Sources */,
 				10F6FF9022E43AAE00ED74C4 /* Frameworks */,
 				10F6FF9122E43AAE00ED74C4 /* Resources */,
+				77091249E165929EB6541731 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +221,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77091249E165929EB6541731 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Be Human/Pods-Be Human-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Be Human/Pods-Be Human-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Be Human/Pods-Be Human-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9282DAE3444B8B7601DF5BCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Be Human-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10F6FF8F22E43AAE00ED74C4 /* Sources */ = {
@@ -329,6 +398,7 @@
 		};
 		10F6FFA622E43AB100ED74C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEC7B02BA52C9FED8D3B43F /* Pods-Be Human.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -347,6 +417,7 @@
 		};
 		10F6FFA722E43AB100ED74C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A45E0558BF6AF8E89ED304 /* Pods-Be Human.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

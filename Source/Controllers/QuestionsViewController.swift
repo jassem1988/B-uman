@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JGProgressHUD
 
 class QuestionsViewController: UIViewController {
     
@@ -92,10 +93,10 @@ class QuestionsViewController: UIViewController {
         let correctAnswer = allQuestions.questionList[questionNumber].answer
         
         if correctAnswer == pickedAnswer {
-            print("you are right")
+            showHUD("Right")
             score += 1
         } else {
-            print("you are wrong")
+            showHUD("Wrong")
         }
         
     }
@@ -109,6 +110,23 @@ class QuestionsViewController: UIViewController {
     }
     
 
+    func showHUD(_ indicator: String) {
+        
+        let hud = JGProgressHUD(style: .extraLight)
+        if indicator == "Right" {
+            hud.indicatorView = JGProgressHUDSuccessIndicatorView.init()
+            hud.textLabel.text = indicator
+        } else if indicator == "Wrong" {
+            hud.indicatorView = JGProgressHUDErrorIndicatorView.init()
+            hud.textLabel.text = indicator
+        }
+        
+        hud.vibrancyEnabled = true
+        hud.show(in: self.view)
+        hud.dismiss(afterDelay: 1.0)
+        
+    }
+    
     
     
     
