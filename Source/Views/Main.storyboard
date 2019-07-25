@@ -209,18 +209,18 @@
                                         <rect key="frame" x="20" y="124.66666666666674" width="335" height="74.666666666666686"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tS-HR-pCt" userLabel="Progress Bar">
-                                                <rect key="frame" x="0.0" y="27" width="232" height="20"/>
+                                                <rect key="frame" x="0.0" y="27" width="21" height="20"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBO-cp-Z0w">
-                                                        <rect key="frame" x="0.0" y="0.0" width="32" height="20"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="33.666666666666664" height="20"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="232" id="B1A-Zg-I7u"/>
+                                                    <constraint firstAttribute="width" constant="21" id="B1A-Zg-I7u"/>
                                                     <constraint firstAttribute="height" constant="20" id="L7g-UW-QUG"/>
                                                     <constraint firstAttribute="bottom" secondItem="hBO-cp-Z0w" secondAttribute="bottom" id="MnQ-SY-VgB"/>
                                                     <constraint firstItem="hBO-cp-Z0w" firstAttribute="leading" secondItem="6tS-HR-pCt" secondAttribute="leading" id="fQT-v9-szK"/>
@@ -344,6 +344,7 @@
                     </view>
                     <connections>
                         <outlet property="progressBar" destination="6tS-HR-pCt" id="rFK-v7-F88"/>
+                        <outlet property="progressContainer" destination="XiW-jd-nFC" id="Vbr-50-26H"/>
                         <outlet property="questionLabel" destination="VrH-Ed-WII" id="Zsb-BD-HC9"/>
                         <outlet property="questionNumberLabel" destination="hBO-cp-Z0w" id="hVk-07-eNA"/>
                         <outlet property="scoreLabel" destination="wGI-Lh-d9w" id="qfl-aR-nof"/>

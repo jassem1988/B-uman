@@ -10,23 +10,26 @@ import UIKit
 
 class QuestionsViewController: UIViewController {
     
-    //Properties: -
+    //MARK: - Properties: -
+    
+    //Outlets: -
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var progressBar: UIView!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionNumberLabel: UILabel!
+    @IBOutlet weak var progressContainer: UIView!
     
+    //Variables: -
     let allQuestions = QuestionBank()
     var pickedAnswer: Bool = false
     var questionNumber: Int = 0
-    
-    
+    var score: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let firstQuestion = allQuestions.questionList[0]
-        questionLabel.text = firstQuestion.questionText
+        nextQuestion()
+        
     }
     
     
@@ -52,6 +55,14 @@ class QuestionsViewController: UIViewController {
     
     func updateUI() {
         
+        let numberOfQuestions = allQuestions.questionList.count
+        
+        scoreLabel.text = String(score)
+        questionNumberLabel.text = "\(questionNumber + 1) / \(numberOfQuestions)"
+        
+       
+        progressBar.frame.size.width =  (progressContainer.frame.size.width / CGFloat(numberOfQuestions)) * CGFloat(questionNumber + 1)
+    
         
         
     }
@@ -60,6 +71,9 @@ class QuestionsViewController: UIViewController {
         
         if questionNumber <= allQuestions.questionList.count - 1  {
             questionLabel.text = allQuestions.questionList[questionNumber].questionText
+            
+            updateUI()
+            
         } else {
             let ac = UIAlertController(title: "Great!", message: "You finished the quiz, just B-uman", preferredStyle: .alert)
             
@@ -79,6 +93,7 @@ class QuestionsViewController: UIViewController {
         
         if correctAnswer == pickedAnswer {
             print("you are right")
+            score += 1
         } else {
             print("you are wrong")
         }
@@ -88,8 +103,9 @@ class QuestionsViewController: UIViewController {
     
     func startOver() {
         
+        score = 0
         questionNumber = 0
-        nextQuestion() 
+        nextQuestion()
     }
     
 
