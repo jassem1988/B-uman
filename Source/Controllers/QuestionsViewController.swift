@@ -28,7 +28,7 @@ class QuestionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         questionLabel.sizeToFit()
         nextQuestion()
         
@@ -122,6 +122,7 @@ class QuestionsViewController: UIViewController {
             hud.textLabel.text = indicator
         }
         
+//        hud.parallaxMode = .alwaysOff
         hud.vibrancyEnabled = true
         hud.show(in: self.view)
         hud.dismiss(afterDelay: 1.0)
