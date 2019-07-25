@@ -22,19 +22,11 @@ class GenderViewController: UIViewController {
     
     //MARK: - Buttons Actions
     
-    @IBAction func maleButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "genderChoice", sender: sender)
-        navigationController?.navigationBar.barTintColor = UIColor.red
+    @IBAction func humanButtonPressed(_ sender: UIButton) {
         
+        performSegue(withIdentifier: "genderChoice", sender: sender)
         
     }
     
-
-
-    @IBAction func femaleButtonPressed(_ sender: UIButton) {
-        
-        performSegue(withIdentifier: "genderChoice", sender: sender)
-        navigationController?.navigationBar.barTintColor = UIColor.green
-    }
 }
 

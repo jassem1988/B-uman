@@ -27,7 +27,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYw-aM-IAD" userLabel="Buttons Container">
                                         <rect key="frame" x="20" y="161" width="335" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnZ-9f-1Vq">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnZ-9f-1Vq">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="50"/>
                                                 <color key="backgroundColor" red="1" green="0.8666666666666667" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -35,14 +35,14 @@
                                                     <constraint firstAttribute="height" constant="50" id="DjS-O0-vnn"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
-                                                <state key="normal" title="Male">
+                                                <state key="normal" title="Human">
                                                     <color key="titleColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="maleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="txs-El-dM1"/>
+                                                    <action selector="humanButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ovo-EZ-9e4"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuN-E9-xCF">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuN-E9-xCF">
                                                 <rect key="frame" x="195" y="0.0" width="140" height="50"/>
                                                 <color key="backgroundColor" red="1" green="0.86666666670000003" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -50,11 +50,11 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="Z2p-jl-Mvo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
-                                                <state key="normal" title="Female">
+                                                <state key="normal" title="B-uman">
                                                     <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="femaleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPR-Vz-xIR"/>
+                                                    <action selector="humanButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUS-rw-PsX"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -210,10 +210,21 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tS-HR-pCt" userLabel="Progress Bar">
                                                 <rect key="frame" x="0.0" y="27" width="232" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBO-cp-Z0w">
+                                                        <rect key="frame" x="0.0" y="0.0" width="32" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="232" id="B1A-Zg-I7u"/>
                                                     <constraint firstAttribute="height" constant="20" id="L7g-UW-QUG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hBO-cp-Z0w" secondAttribute="bottom" id="MnQ-SY-VgB"/>
+                                                    <constraint firstItem="hBO-cp-Z0w" firstAttribute="leading" secondItem="6tS-HR-pCt" secondAttribute="leading" id="fQT-v9-szK"/>
+                                                    <constraint firstItem="hBO-cp-Z0w" firstAttribute="top" secondItem="6tS-HR-pCt" secondAttribute="top" id="wbl-6V-KcR"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGI-Lh-d9w" userLabel="Score Label">
@@ -334,6 +345,7 @@
                     <connections>
                         <outlet property="progressBar" destination="6tS-HR-pCt" id="rFK-v7-F88"/>
                         <outlet property="questionLabel" destination="VrH-Ed-WII" id="Zsb-BD-HC9"/>
+                        <outlet property="questionNumberLabel" destination="hBO-cp-Z0w" id="hVk-07-eNA"/>
                         <outlet property="scoreLabel" destination="wGI-Lh-d9w" id="qfl-aR-nof"/>
                     </connections>
                 </viewController>
@@ -351,7 +363,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.81176470588235294" green="0.27058823529411763" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
