@@ -83,6 +83,10 @@ class QuestionsViewController: UIViewController {
                 self.startOver()
             }))
             
+            ac.addAction(UIAlertAction(title: "Source", style: .default, handler: { (action) in
+                self.performSegue(withIdentifier: "goToSources", sender: self)
+            }))
+            
             present(ac, animated: true, completion: nil)
             
         }

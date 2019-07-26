@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SourceTableViewCell" customModule="Be_Human" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="177"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="176.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bwu-kV-ZzH" userLabel="Main Container">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="176.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Orange BK" translatesAutoresizingMaskIntoConstraints="NO" id="7Bc-2S-kwn">
+                                <rect key="frame" x="15" y="15" width="313" height="146.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1: Mercury fathered Hermaphroditus" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBV-NQ-WLG">
+                                <rect key="frame" x="29" y="28" width="241" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="apM-Bq-vLz"/>
+                                    <constraint firstAttribute="width" constant="241" id="hX5-TW-C6A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In mythology, Mercury fathered Hermaphroditus, who had both male and female sex organs." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ia3-hi-xdn">
+                                <rect key="frame" x="29" y="75" width="241" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="CsM-mP-AaC"/>
+                                    <constraint firstAttribute="width" constant="241" id="H7d-Ud-1wh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="yhF-4s-43D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1Z-PD-iDP">
+                                <rect key="frame" x="233" y="120" width="80" height="28.5"/>
+                                <color key="backgroundColor" red="1" green="0.86666666670000003" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28.5" id="XeF-BJ-S0L"/>
+                                    <constraint firstAttribute="width" constant="80" id="zmK-Wx-djy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="8"/>
+                                <state key="normal" title="Check the source">
+                                    <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sourceButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="anc-Yb-WTs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="7Bc-2S-kwn" firstAttribute="leading" secondItem="Bwu-kV-ZzH" secondAttribute="leading" constant="15" id="7hy-Ox-3lI"/>
+                            <constraint firstAttribute="trailing" secondItem="Y1Z-PD-iDP" secondAttribute="trailing" constant="30" id="Ezn-Vc-nNa"/>
+                            <constraint firstItem="7Bc-2S-kwn" firstAttribute="top" secondItem="Bwu-kV-ZzH" secondAttribute="top" constant="15" id="R8q-Va-kEi"/>
+                            <constraint firstAttribute="bottom" secondItem="Y1Z-PD-iDP" secondAttribute="bottom" constant="28" id="Swq-2P-K1x"/>
+                            <constraint firstAttribute="trailing" secondItem="7Bc-2S-kwn" secondAttribute="trailing" constant="15" id="Uny-DF-bza"/>
+                            <constraint firstAttribute="bottom" secondItem="7Bc-2S-kwn" secondAttribute="bottom" constant="15" id="Ztb-aP-PoY"/>
+                            <constraint firstItem="ia3-hi-xdn" firstAttribute="leading" secondItem="Bwu-kV-ZzH" secondAttribute="leading" constant="29" id="bYP-gI-ECh"/>
+                            <constraint firstItem="KBV-NQ-WLG" firstAttribute="leading" secondItem="Bwu-kV-ZzH" secondAttribute="leading" constant="29" id="dbV-53-27J"/>
+                            <constraint firstItem="KBV-NQ-WLG" firstAttribute="top" secondItem="Bwu-kV-ZzH" secondAttribute="top" constant="28" id="l8A-nn-UEd"/>
+                            <constraint firstItem="ia3-hi-xdn" firstAttribute="top" secondItem="KBV-NQ-WLG" secondAttribute="bottom" constant="6" id="rCY-A4-lFW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bwu-kV-ZzH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8Cg-XG-R7a"/>
+                    <constraint firstItem="Bwu-kV-ZzH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iIA-Kz-egV"/>
+                    <constraint firstAttribute="bottom" secondItem="Bwu-kV-ZzH" secondAttribute="bottom" id="jJa-ka-zIb"/>
+                    <constraint firstAttribute="trailing" secondItem="Bwu-kV-ZzH" secondAttribute="trailing" id="uOk-op-1pm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="ia3-hi-xdn" id="Ovm-HO-XJs"/>
+                <outlet property="titleLabel" destination="KBV-NQ-WLG" id="5AW-JB-Sla"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="132.92410714285714"/>
+        </tableViewCell>
+        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hec-Gj-4D7">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="50"/>
+            <color key="backgroundColor" red="1" green="0.86666666670000003" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="height" constant="50" id="ACS-mN-aRb"/>
+                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="OFj-Vq-aKB"/>
+            </constraints>
+            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+            <state key="normal" title="B-uman">
+                <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+            </state>
+        </button>
+    </objects>
+    <resources>
+        <image name="Orange BK" width="126.5" height="141"/>
+    </resources>
+</document>
