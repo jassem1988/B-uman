@@ -14,9 +14,7 @@ class SourceTableViewCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var imageOneView: UIImageView!
-    @IBOutlet weak var imageTwoView: UIImageView!
-    @IBOutlet weak var imageThreeView: UIImageView!
+    
     
 
     override func awakeFromNib() {

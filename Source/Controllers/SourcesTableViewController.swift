@@ -12,7 +12,7 @@ class SourcesTableViewController: UITableViewController {
     
     //Properties: -
     
-    let allQuestions = QuestionBank()
+    let allSources = QuestionsSources()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class SourcesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allQuestions.questionList.count
+        return allSources.sourcesList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -29,8 +29,10 @@ class SourcesTableViewController: UITableViewController {
         
         let cell = Bundle.main.loadNibNamed("SourceTableViewCell", owner: self, options: nil)?.first as! SourceTableViewCell
         
-        cell.titleLabel.text = allQuestions.questionList[indexPath.row].questionText
-        cell.descriptionLabel.text = String(allQuestions.questionList[indexPath.row].answer)
+        cell.titleLabel.text = allSources.sourcesList[indexPath.row].title
+        
+        cell.descriptionLabel.text = allSources.sourcesList[indexPath.row].description
+        
         
         
         return cell
