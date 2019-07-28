@@ -33,6 +33,8 @@ class SourcesTableViewController: UITableViewController {
         
         cell.descriptionLabel.text = allSources.sourcesList[indexPath.row].description
         
+        cell.cellDelegate = self
+        cell.index = indexPath
         
         
         return cell
@@ -41,4 +43,15 @@ class SourcesTableViewController: UITableViewController {
 
  
 
+}
+
+extension SourcesTableViewController: TableViewNew {
+    
+    func onClickCell(index: Int) {
+        
+        print("\(index) is clicked")
+        print(allSources.sourcesList[index].sourceURL)
+        
+        
+    }
 }

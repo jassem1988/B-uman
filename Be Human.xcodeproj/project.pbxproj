@@ -12,6 +12,7 @@
 		1042D15E22EB3D0100C66BD2 /* SourceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1042D15C22EB3D0100C66BD2 /* SourceTableViewCell.xib */; };
 		105C803D22EB4BC00095F811 /* QuestionsSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105C803C22EB4BC00095F811 /* QuestionsSources.swift */; };
 		105C803F22EB4C4E0095F811 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105C803E22EB4C4E0095F811 /* Source.swift */; };
+		105C804122EB90A00095F811 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105C804022EB90A00095F811 /* WebViewController.swift */; };
 		10D66A0322E84B4B005CA47E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D669F622E84B4B005CA47E /* Main.storyboard */; };
 		10D66A0422E84B4B005CA47E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D669FA22E84B4B005CA47E /* LaunchScreen.storyboard */; };
 		10D66A0622E84B4B005CA47E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D669FD22E84B4B005CA47E /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 		1042D15C22EB3D0100C66BD2 /* SourceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SourceTableViewCell.xib; sourceTree = "<group>"; };
 		105C803C22EB4BC00095F811 /* QuestionsSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsSources.swift; sourceTree = "<group>"; };
 		105C803E22EB4C4E0095F811 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		105C804022EB90A00095F811 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		10D669F622E84B4B005CA47E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		10D669FA22E84B4B005CA47E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10D669FB22E84B4B005CA47E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				10D669F622E84B4B005CA47E /* Main.storyboard */,
+				1042D15C22EB3D0100C66BD2 /* SourceTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,7 +131,7 @@
 				10D66A0222E84B4B005CA47E /* GenderViewController.swift */,
 				1042D15922EB379500C66BD2 /* SourcesTableViewController.swift */,
 				1042D15B22EB3D0100C66BD2 /* SourceTableViewCell.swift */,
-				1042D15C22EB3D0100C66BD2 /* SourceTableViewCell.xib */,
+				105C804022EB90A00095F811 /* WebViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				105C803D22EB4BC00095F811 /* QuestionsSources.swift in Sources */,
 				10D66A0622E84B4B005CA47E /* AppDelegate.swift in Sources */,
 				10D66A0B22E85FC5005CA47E /* Question.swift in Sources */,
+				105C804122EB90A00095F811 /* WebViewController.swift in Sources */,
 				10D66A0822E84B4B005CA47E /* QuestionsViewController.swift in Sources */,
 				1042D15D22EB3D0100C66BD2 /* SourceTableViewCell.swift in Sources */,
 				105C803F22EB4C4E0095F811 /* Source.swift in Sources */,

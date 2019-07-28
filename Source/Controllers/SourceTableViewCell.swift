@@ -8,7 +8,16 @@
 
 import UIKit
 
+protocol TableViewNew {
+    func onClickCell(index: Int)
+}
+
 class SourceTableViewCell: UITableViewCell {
+    
+    //Propeties: -
+    
+    var cellDelegate: TableViewNew?
+    var index: IndexPath?
     
     //Outlets: -
     
@@ -24,6 +33,9 @@ class SourceTableViewCell: UITableViewCell {
 
     
     @IBAction func sourceButtonPressed(_ sender: UIButton) {
+        cellDelegate?.onClickCell(index: (index?.row)!)
+        
+        
     }
     
 }
