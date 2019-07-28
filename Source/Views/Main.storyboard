@@ -389,7 +389,7 @@
         <!--Web View Controller-->
         <scene sceneID="jNS-37-hAQ">
             <objects>
-                <viewController id="7Ut-Ss-h4o" customClass="WebViewController" customModule="Be_Human" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" id="7Ut-Ss-h4o" customClass="WebViewController" customModule="Be_Human" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BxP-sD-qWB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

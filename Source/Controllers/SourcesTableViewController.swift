@@ -49,8 +49,19 @@ extension SourcesTableViewController: TableViewNew {
     
     func onClickCell(index: Int) {
         
-        print("\(index) is clicked")
-        print(allSources.sourcesList[index].sourceURL)
+//        print("\(index) is clicked")
+//        print(allSources.sourcesList[index].sourceURL)
+        
+        //Load WebViewController and send sourceURL to url in webVC
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let webVC: WebViewController = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+        
+        webVC.url = allSources.sourcesList[index].sourceURL
+        
+        self.present(webVC, animated: true, completion: nil)
+        
+        
         
         
     }
