@@ -59,10 +59,7 @@ extension SourcesTableViewController: TableViewNew {
         
         webVC.url = allSources.sourcesList[index].sourceURL
         
-        self.present(webVC, animated: true, completion: nil)
-        
-        
-        
+        self.navigationController?.pushViewController(webVC, animated: true)
         
     }
 }
