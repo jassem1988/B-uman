@@ -30,8 +30,14 @@ class QuestionsViewController: UIViewController {
         super.viewDidLoad()
         
         questionLabel.sizeToFit()
-        nextQuestion()
+//        nextQuestion()
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        //Fix bug: After going back from sources the restart alert will not show up
+        nextQuestion()
     }
     
     
