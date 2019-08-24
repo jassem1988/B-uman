@@ -30,7 +30,7 @@ class QuestionsViewController: UIViewController {
         super.viewDidLoad()
         
         questionLabel.sizeToFit()
-//        nextQuestion()
+        startOver()
         
     }
     
@@ -104,10 +104,10 @@ class QuestionsViewController: UIViewController {
         let correctAnswer = allQuestions.questionList[questionNumber].answer
         
         if correctAnswer == pickedAnswer {
-            showHUD("Right")
+            ProgressHUD.showSuccess("Right")
             score += 1
         } else {
-            showHUD("Wrong")
+            ProgressHUD.showError("Wrong")
         }
         
     }
