@@ -30,6 +30,7 @@ class QuestionsViewController: UIViewController {
         super.viewDidLoad()
         
         questionLabel.sizeToFit()
+        startOver()
         
     }
     

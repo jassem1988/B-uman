@@ -29,7 +29,7 @@ struct QuestionsSources {
         
         sourcesList.append(Source(title: "Question 8", description: "In the 1960s, the term AC/DC became a popular slang for bisexual", sourceURL: "https://www.thefreedictionary.com/AC%2FDC"))
         
-        sourcesList.append(Source(title: "Question 9", description: "ruce’ was considered a stereotypically gay name in the 1970’s", sourceURL: "http://drownedinsound.com/community/boards/social/346106"))
+        sourcesList.append(Source(title: "Question 9", description: "ruce’ was considered a stereotypically gay name in the 1970’s", sourceURL: "https://scifi.stackexchange.com/questions/91702/why-was-bruce-banner-named-david-banner-in-the-old-tv-show"))
         
         sourcesList.append(Source(title: "Question 10", description: "The first gay kiss screened in Saudi Arabia", sourceURL: "https://www.gaystarnews.com/article/lesbian-kiss-olympic-opening-ceremony-sparks-praise-fury280712/#gs.s8vzr0"))
     }
